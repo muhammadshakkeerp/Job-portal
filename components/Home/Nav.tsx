@@ -1,8 +1,27 @@
+import Link from 'next/link'
 import React from 'react'
+import LogoImage from '@/public/images/logo.png'
+import Image from 'next/image'
 
 const Nav = () => {
     return (
-        <div>Nav</div>
+        <div className='h-[13vh] shadow-md'>
+            <div className='w-[90%] md-[80%] h-full mx-auto flex items-center justify-between'>
+                {/* logo */}
+                <div>
+                    <div className='w-[150px] h-[150px] md:w-[250px] md:h-[250px]'>
+                        <Link href='/'>
+                            <Image src={LogoImage} alt="logo" className='w-full h-full' />
+                        </Link>
+                    </div>
+                </div>
+
+                <div>
+                    {/* <Image src={''} alt='user logo' /> */}
+                    <Link href={'/signup'}><button className='px-4 py-1.5 text-[14px] sm:text-[16px] sm:px-6 sm:py-2 bg-blue-600 font-semibold text-white rounded-lg hover:bg-blue-800 transition-colors duration-300'>Sign up</button></Link>
+                </div>
+            </div>
+        </div>
     )
 }
 
