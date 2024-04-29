@@ -1,4 +1,4 @@
-import SignUp from '@/components/Home/Auth/SignUp'
+import SignUp from '@/components/Auth/SignUp'
 import React from 'react'
 
 const SignupPage = () => {
