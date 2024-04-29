@@ -1,7 +1,9 @@
 import Image from "next/image";
-
-export default function Home() {
+import {Home} from "../paths"
+export default function HomePage() {
   return (
-    <div>Homepage</div>
+    <div>
+      <Home/>
+    </div>
   );
 }
