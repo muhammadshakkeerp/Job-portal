@@ -4,7 +4,7 @@ interface Props {
     mainHeading: string
     subHeading: string
 }
-const Heading = (props: Props) => {
+export const Heading = (props: Props) => {
     return (
 
         <div className="text-center p-3">
@@ -20,4 +20,3 @@ const Heading = (props: Props) => {
     )
 }
 
-export default Heading
