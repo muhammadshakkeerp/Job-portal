@@ -1,10 +1,11 @@
 import React from 'react'
-import Hero from './Hero'
+import { Hero, JobCategory } from '../../paths'
 
 const Home = () => {
     return (
         <div>
             <Hero />
+            <JobCategory />
         </div>
     )
 }
