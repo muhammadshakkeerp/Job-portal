@@ -4,7 +4,7 @@
 
 ## Installing Instructions
 
-For detailed instructions on how to install the project, please refer to the [INSTALLATION_INSTRUCTIONS.md](INSTALLATION_INSTRUCTIONS.md) file.
+For detailed instructions on how to install the project, please refer to the [INSTALLATION_INSTRUCTIONS.md](INSTALLATION_INSTRUCTION.md) file.
 
 
 **1. Project Structure and Architecture:**
