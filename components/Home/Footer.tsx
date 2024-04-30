@@ -24,45 +24,30 @@ const Footer = () => {
                         <SocialIcon bgColor={'pink'} Icon={FaInstagram} />
                     </div>
                 </div>
-                {/* 2nd part of footer */}
-                {/* <div>
-                    <h1 className='text-[22px] w-fit text-white font-semibold mb-6'>About Us</h1>
-                    {aboutItems?.map((item, index) => <p key={index} className='text-base w-fit text-white text-opacity-50 hover:text-yellow-300 cursor-pointer '>{item}</p>)}
-
-                </div> */}
-                <FooterSection data={aboutItems} />
-                {/* 3rd part of footer */}
-                {/* <div>
-                    <h1 className='text-[22px] w-fit text-white font-semibold mb-6'>Quick Links</h1>
-                    {quickLinkItems?.map((item, index) => <p key={index} className='text-base w-fit text-white text-opacity-50 hover:text-yellow-300 cursor-pointer '>{item}</p>)}
-
-                </div> */}
-
+                {/* 2nd part of footer  */}
+                <FooterSection title={'About Us'} data={aboutItems} />
+                {/* 3rd part of footer  */}
+                <FooterSection title={'Quick Links'} data={quickLinkItems} />
                 {/* 4th part of footer */}
-                <div>
-                    <h1 className='text-[22px] w-fit text-white font-semibold mb-6'>Getin Touch</h1>
-                    <p className='text-base w-fit text-white text-opacity-50 hover:text-yellow-300 cursor-pointer '>+01234567</p>
-                    <p className='text-base w-fit text-white text-opacity-50 hover:text-yellow-300 cursor-pointer '>example@gmail.com</p>
-                    <p className='text-base w-fit text-white text-opacity-50 hover:text-yellow-300 cursor-pointer '>India</p>
-
-                </div>
+                <FooterSection title={'Get in Touch'} data={['+01234567', 'example@gmail.com', 'India']} />
             </div>
         </div>
     )
 }
-
+// COMPONENT FOR SECIAL ICON 
 const SocialIcon = ({ bgColor, Icon }: Props) => (
     <div className={`w-10 h-10 bg-${bgColor}-600 rounded-full flex items-center justify-center flex-col`}>
         <Icon className='text-white' />
     </div>
 );
-interface Props {
+interface SectionProps {
     data: String[]
-    title:String
+    title: String
 }
-const FooterSection = ({ data }: Props) => (
+// COMPONENT FOR FOOTER SECTION
+const FooterSection = ({ data, title }: SectionProps) => (
     <div>
-        <h1 className='text-[22px] w-fit text-white font-semibold mb-6'>Quick Links</h1>
+        <h1 className='text-[22px] w-fit text-white font-semibold mb-6'>{title}</h1>
         {data?.map((item, index) => <p key={index} className='text-base w-fit text-white text-opacity-50 hover:text-yellow-300 cursor-pointer '>{item}</p>)}
     </div>
 )
