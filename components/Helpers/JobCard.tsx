@@ -9,7 +9,7 @@ interface Props {
 }
 export const JobCard = ({ job }: Props) => {
   return (
-    <div className="transition-transform duration-300 hover:scale-105 border-gray-600 rounded-lg  border-2 border-opacity-20 md:p-2">
+    <div className="transition-transform duration-300 hover:scale-105 border-gray-600 rounded-lg  border-2 border-opacity-20 p-1 md:p-2">
       <div className="flex items-center space-x-6">
         {/* Image */}
         <div>
@@ -35,13 +35,13 @@ export const JobCard = ({ job }: Props) => {
             
           </div>
           <div className='flex item-center space-x-2 sm:space-x-4 mt-[1rem]'>
-              <div className='text-[10px] sm:text-sm text-opacity-80 px-3 sm:px-6 py-1 rounded-full bg-opacity-30 font-semibold capitalize bg-green-600'>
+              <div className='text-[10px] sm:text-sm text-opacity-80 px-2 sm:px-6 py-1 rounded-full bg-opacity-30 font-semibold capitalize bg-green-600'>
                 {job?.jobtype}
               </div>
-              <div className='text-[10px] sm:text-sm text-opacity-80 px-3 sm:px-6 py-1 rounded-full bg-opacity-30 font-semibold capitalize bg-red-600'>
+              <div className='text-[10px] sm:text-sm text-opacity-80 px-2 sm:px-6 py-1 rounded-full bg-opacity-30 font-semibold capitalize bg-red-600'>
                Private
               </div>
-              <div className='text-[10px] sm:text-sm text-opacity-80 px-3 sm:px-6 py-1 rounded-full bg-opacity-30 font-semibold capitalize bg-blue-600'>
+              <div className='text-[10px] sm:text-sm text-opacity-80 px-2 sm:px-6 py-1 rounded-full bg-opacity-30 font-semibold capitalize bg-blue-600'>
                Urgent
               </div>
             </div>
