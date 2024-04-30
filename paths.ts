@@ -4,5 +4,7 @@ import Hero from "./components/Home/Hero";
 import Home from "./components/Home/Home";
 import JobCategory from "./components/Home/JobCategory";
 import Heading from "./components/Helpers/Heading";
+//
+import { JobCategoryCard } from "./components/Helpers/JobCategoryCard";
 
-export { Home, JobCategory, SignupPage, User, Hero ,Heading};
+export { Home, JobCategory, SignupPage, User, Hero, Heading, JobCategoryCard };
