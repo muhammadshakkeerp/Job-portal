@@ -2,10 +2,7 @@
 
 **Project Plan: Building a Job Portal with Next.js, TypeScript, and Tailwind CSS**
 
-## Installing Instructions
-
-For detailed instructions on how to install the project, please refer to the [INSTALLATION_INSTRUCTIONS.md](INSTALLATION_INSTRUCTION.md) file.
-
+### Installing Instructions [INSTALLATION_INSTRUCTIONS.md](INSTALLATION_INSTRUCTION.md) file.
 
 **1. Project Structure and Architecture:**
    - Define a scalable and maintainable directory structure.
