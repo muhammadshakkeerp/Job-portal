@@ -15,7 +15,7 @@ const User = ({ session }: Props) => {
                 <Image src={session.user.image} alt="logged_img" className="rounded-full" width={50} height={50} />
                 <span className="hidden sm:block sm:text-xs">{session?.user?.name}</span>
 
-                {showLogout && <button 
+                {showLogout && <button
                     onClick={() => signOut({ callbackUrl: `${process.env.NEXT_PUBLIC_URL}/signup` })} className="hidden sm:block absolute -bottom-6">Logout</button>}
 
             </div>}
