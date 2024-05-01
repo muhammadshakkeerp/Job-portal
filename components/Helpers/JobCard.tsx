@@ -32,19 +32,19 @@ export const JobCard = ({ job }: Props) => {
               <p className='text-sm text-black font-semibold text-opacity-60'>{job?.salary}</p>
             </div>
             {/* tags */}
-            
+
           </div>
           <div className='flex item-center space-x-2 sm:space-x-4 mt-[1rem]'>
-              <div className='text-[10px] sm:text-sm text-opacity-80 px-2 sm:px-6 py-1 rounded-full bg-opacity-30 font-semibold capitalize bg-green-600'>
-                {job?.jobtype}
-              </div>
-              <div className='text-[10px] sm:text-sm text-opacity-80 px-2 sm:px-6 py-1 rounded-full bg-opacity-30 font-semibold capitalize bg-red-600'>
-               Private
-              </div>
-              <div className='text-[10px] sm:text-sm text-opacity-80 px-2 sm:px-6 py-1 rounded-full bg-opacity-30 font-semibold capitalize bg-blue-600'>
-               Urgent
-              </div>
+            <div className='text-[10px] sm:text-sm text-opacity-80 px-2 sm:px-6 py-1 rounded-full bg-opacity-30 font-semibold capitalize bg-green-600'>
+              {job?.jobtype}
             </div>
+            <div className='text-[10px] sm:text-sm text-opacity-80 px-2 sm:px-6 py-1 rounded-full bg-opacity-30 font-semibold capitalize bg-red-600'>
+              Private
+            </div>
+            <div className='text-[10px] sm:text-sm text-opacity-80 px-2 sm:px-6 py-1 rounded-full bg-opacity-30 font-semibold capitalize bg-blue-600'>
+              Urgent
+            </div>
+          </div>
         </div>
       </div>
     </div>
