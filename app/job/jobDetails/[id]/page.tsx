@@ -9,6 +9,7 @@ const JobDeatils = async ({ params }: { params: { id: string } }) => {
   const getJobDetail = JobData?.find((job) => job.id.toString() === params.id)
 
   const session = await getServerSession(authOptions)
+  const relatedJobs = JobData?.slice(0, 4)
 
   return (
     <div className='mt-20 mb-12'>
@@ -37,6 +38,15 @@ const JobDeatils = async ({ params }: { params: { id: string } }) => {
             <li className='text-black text-opacity-70'>Javascript</li>
             <li className='text-black text-opacity-70'>Tailwindcss</li>
           </ul>
+        </div>
+
+        <div className='mt-10'>
+          <h1 className='text-xl font-semibold'>Related Jobs</h1>
+          {relatedJobs?.map((job) => <Link key={job.id} href={`/job/jobDetails/${job.id}`} className='space-y-6'>
+            <JobCard job={job} />
+          </Link>
+
+          )}
         </div>
       </div>
 
