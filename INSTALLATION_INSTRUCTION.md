@@ -33,7 +33,17 @@ Install the necessary dependencies using npm:
 ```bash
 npm install
 ```
-## Create next.config.mjs & copy past this
+### Create .env.local file on root folder, set following enviromental variables
+```
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your_nextauth_secret
+NEXT_PUBLIC_URL=http://localhost:3000
+
+ ```
+
+### Create next.config.mjs & copy past this
 ``` 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
