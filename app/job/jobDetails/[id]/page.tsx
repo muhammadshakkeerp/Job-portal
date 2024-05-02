@@ -21,6 +21,25 @@ const JobDeatils = async ({ params }: { params: { id: string } }) => {
           <button type='button' className='px-8 py-3 bg-emerald-600 rounded-lg text-white'>Signup</button>
         </Link>}
       </div>
+      <div className='mt-16 w-[80%] mx-auto'>
+        <h1 className='text-xl font-semibold'>Job Description</h1>
+        <p className='mt-4 text-black text-opacity-70'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis deleniti blanditiis aliquid voluptatem, saepe autem omnis, aperiam consequatur quos voluptas quisquam, corporis facere. Tempore maxime, laboriosam corporis dolorum animi nihil!</p>
+        <div className='mt-10 '>
+          <h1 className='text-xl font-semibold'>Key Resposibilities</h1>
+          <p className='mt-4 text-black text-opacity-70'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis deleniti blanditiis aliquid voluptatem, saepe autem omnis, aperiam consequatur quos voluptas quisquam, corporis facere. Tempore maxime, laboriosam corporis dolorum animi nihil!</p>
+        </div>
+        <div className='mt-10 '>
+          <h1 className='text-xl font-semibold'>Key Resposibilities</h1>
+          <ul className='mt-4'>
+            <li className='text-black text-opacity-70'>React JS</li>
+            <li className='text-black text-opacity-70'>HTML5</li>
+            <li className='text-black text-opacity-70'>CSS3</li>
+            <li className='text-black text-opacity-70'>Javascript</li>
+            <li className='text-black text-opacity-70'>Tailwindcss</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   )
 }
