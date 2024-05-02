@@ -11,6 +11,7 @@ import Nav from "./components/Home/Nav";
 import { JobCategoryCard } from "./components/Helpers/JobCategoryCard";
 import { JobCard } from "./components/Helpers/JobCard";
 import { ScrollToTop } from "./components/Helpers/ScrollToTop";
+import { ApplyButton } from "./components/Helpers/ApplyButton";
 
 export {
   Nav,
@@ -21,6 +22,7 @@ export {
   User,
   Hero,
   Heading,
+  ApplyButton,
   JobCategoryCard,
   FeatureJobs,
   ScrollToTop,
