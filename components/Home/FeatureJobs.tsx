@@ -9,7 +9,7 @@ const FeatureJobs = () => {
 
             <div className='mt-12 w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12'>
                 {JobData?.map((job) => {
-                    return <Link key={job?.id} href={`job/job_details/${job?.id}`}>
+                    return <Link key={job?.id} href={`job/jobDetails/${job?.id}`}>
                         <JobCard job={job} />
                     </Link>
                 })}

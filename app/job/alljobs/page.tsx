@@ -9,8 +9,8 @@ const AllJobs = () => {
       <div className='mb-12'>
         <h1 className='semi-bold'>Show Result ({JobData.length})</h1>
       </div>
-      <div className="space-y-8">
-        {JobData?.map((job) => <Link key={job.id} href={'job/alljobs'}>
+      <div className="space-y-10">
+        {JobData?.map((job) => <Link key={job.id} href={`/job/jobDetails/${job.id}`}>
           <JobCard job={job} />
         </Link>)}
       </div>
