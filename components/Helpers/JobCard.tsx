@@ -2,14 +2,14 @@ import { Job } from '@/data'
 import Image from 'next/image'
 import React from 'react'
 import { BiMoney } from 'react-icons/bi'
-import { FaMapLocation } from 'react-icons/fa6'
+import { FaMapLocation, FaRegBookmark, } from 'react-icons/fa6'
 
 interface Props {
   job: Job
 }
 export const JobCard = ({ job }: Props) => {
   return (
-    <div className="transition-transform duration-300 hover:scale-105 border-gray-600 rounded-lg  border-2 border-opacity-20 p-1 md:p-2">
+    <div className="relative transition-transform duration-300 hover:scale-105 border-gray-600 rounded-lg  border-2 border-opacity-20 p-1 md:p-2">
       <div className="flex items-center space-x-6">
         {/* Image */}
         <div>
@@ -46,6 +46,10 @@ export const JobCard = ({ job }: Props) => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className='absolute z-40 top-4 right-4'>
+        <FaRegBookmark className='hover:text-orange-600'/>
       </div>
     </div>
   )
