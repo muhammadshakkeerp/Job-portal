@@ -33,6 +33,17 @@ Install the necessary dependencies using npm:
 ```bash
 npm install
 ```
+## Create next.config.mjs & copy past this
+``` 
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+      domains: ['lh3.googleusercontent.com'],
+    },
+  }
+  
+  export default nextConfig
+```
 
 ## Run the Application
 
