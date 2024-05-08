@@ -1,7 +1,7 @@
 # Job-portal 💼
 
 **Project Plan: Building a Job Portal with Next.js, TypeScript, and Tailwind CSS** 🚀
-#### tailwind.config.ts
+
 ### Installing Instructions [INSTALLATION_INSTRUCTIONS.md](INSTALLATION_INSTRUCTION.md) file. 📝
 
 **1. Project Structure and Architecture:** 🏗️
